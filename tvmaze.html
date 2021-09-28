@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TV Maze</h1>
+
+      <form class="form-inline" id="search-form">
+        <input class="form-control" id="search-query" placeholder="Search..." />
+        <button class="btn btn-primary my-2" type="submit">Go!</button>
+      </form>
+
+      <!-- Display -->
+      <div class="row mt-3" id="shows-list">
+        <!-- 
+        <div class="col-md-6 col-lg-3 Show" data-show-id="${show.id}">
+          <div class="card" data-show-id="${show.id}">
+            <div class="card-body">
+            <img class="card-img-top" src="${show.image}">
+            <a href="${show.url}" target="_blank"><h5 class="card-title">${show.name}</h5></a>
+             <p class="card-text lead">${show.genre}</p>
+              <p class="card-text">${show.summary}</p>
+             <button class="btn btn-primary btn-lg episode-btn" data-bs-toggle="modal" data-bs-target="#episodes">View Episodes</button>
+            </div>
+          </div>
+        </div>
+         -->
+      </div>
+
+      <section style="display: none" id="episodes-area"></section>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      <script src="http://unpkg.com/jquery"></script>
+      <script src="http://unpkg.com/axios/dist/axios.js"></script>
+      <script src="tv_maze.js"></script>
+    </div>
+  </body>
+</html>
